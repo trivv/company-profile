@@ -11,7 +11,24 @@
  * It is generally better to create a new file per style scope.
  *
  *= require bootstrap
- *= require_tree .
  *= require_self
  */
-@import '@fortawesome/fontawesome-free';
+
+// @import '@fortawesome/fontawesome-free';
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import '@fortawesome/fontawesome-free/scss/fontawesome';
+@import '@fortawesome/fontawesome-free/scss/regular';
+@import '@fortawesome/fontawesome-free/scss/solid';
+@import '@fortawesome/fontawesome-free/scss/brands';
+@import 'bootstrap/scss/bootstrap';
+
+/* Base */
+@import "site-base";
+/* Navbar */
+@import "site-navbar";
+/* Blocks */
+@import "site-blocks";
