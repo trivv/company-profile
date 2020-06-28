@@ -8,14 +8,12 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("bootstrap");
-require("@fortawesome/fontawesome-free");
 
 const jquery = require("jquery");
 window.jQuery = window.$ = jquery;
 
 import 'owl.carousel';
 import 'aos';
-import 'owl.carousel/dist/assets/owl.carousel.css';
 
 require("packs/jquery-ui")
 require("packs/popper.min")

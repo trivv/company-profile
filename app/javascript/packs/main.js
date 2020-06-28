@@ -257,8 +257,3 @@ $(document).on('turbolinks:load', function() {
   siteScroll();
 
 });
-
-document.addEventListener("turbolinks:before-cache", function() {
-  $('.slide-one-item').owlCarousel('destroy');
-  $('.nonloop-block-13').owlCarousel('destroy');
-});
